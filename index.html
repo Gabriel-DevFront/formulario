@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EstágioJá | Encontre seu estágio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                Estágio<span>Já</span>
+            </a>
+
+            <ul class="menu">
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#cadastrar">Cadastrar vaga</a>
+                </li>
+
+                <li>
+                    <a href="#vagas">Vagas</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-conteudo">
+
+                <div class="hero-texto">
+
+                    <span class="tag">
+                        🚀 Oportunidades para estudantes
+                    </span>
+
+                    <h1>
+                        Encontre seu
+                        <span>próximo estágio.</span>
+                    </h1>
+
+                    <p>
+                        Conectamos estudantes e empresas em busca
+                        de novos talentos. Encontre oportunidades,
+                        divulgue vagas e dê o próximo passo na
+                        sua carreira.
+                    </p>
+
+                    <div class="hero-botoes">
+
+                        <a href="#vagas" class="btn btn-principal">
+                            Ver vagas
+                        </a>
+
+                        <a href="#cadastrar" class="btn btn-secundario">
+                            Divulgar vaga
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <div class="icone-hero">
+                        💼
+                    </div>
+
+                    <h2>
+                        Sua oportunidade
+                        começa aqui.
+                    </h2>
+
+                    <p>
+                        Cadastre uma vaga e encontre estudantes
+                        preparados para fazer parte da sua equipe.
+                    </p>
+
+                    <div class="mini-estatisticas">
+
+                        <div>
+                            <strong id="contadorHero">0</strong>
+                            <span>Vagas</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Online</span>
+                        </div>
+
+                        <div>
+                            <strong>24h</strong>
+                            <span>Divulgação</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BENEFÍCIOS
+        ========================== -->
+
+        <section class="beneficios">
+
+            <div class="titulo-secao">
+
+                <span>POR QUE USAR?</span>
+
+                <h2>
+                    Tudo para facilitar
+                    sua busca
+                </h2>
+
+            </div>
+
+
+            <div class="beneficios-grid">
+
+                <article class="beneficio">
+
+                    <div class="icone">
+                        🔎
+                    </div>
+
+                    <h3>
+                        Encontre oportunidades
+                    </h3>
+
+                    <p>
+                        Consulte vagas de diferentes áreas
+                        e encontre uma oportunidade que combine
+                        com seu perfil.
+                    </p>
+
+                </article>
+
+
+                <article class="beneficio">
+
+                    <div class="icone">
+                        📝
+                    </div>
+
+                    <h3>
+                        Divulgação simples
+                    </h3>
+
+                    <p>
+                        Empresas podem cadastrar suas vagas
+                        de estágio de maneira rápida e prática.
+                    </p>
+
+                </article>
+
+
+                <article class="beneficio">
+
+                    <div class="icone">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Comece sua carreira
+                    </h3>
+
+                    <p>
+                        Dê os primeiros passos no mercado de
+                        trabalho através de uma oportunidade.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FORMULÁRIO
+        ========================== -->
+
+        <section class="cadastro" id="cadastrar">
+
+            <div class="titulo-secao">
+
+                <span>EMPRESAS</span>
+
+                <h2>
+                    Divulgue uma vaga
+                </h2>
+
+                <p>
+                    Preencha as informações abaixo para
+                    publicar sua oportunidade.
+                </p>
+
+            </div>
+
+
+            <form id="formVaga">
+
+                <div class="form-grid">
+
+
+                    <!-- EMPRESA -->
+
+                    <div class="campo">
+
+                        <label for="empresa">
+                            Nome da empresa
+                        </label>
+
+                        <input
+                            type="text"
+                            id="empresa"
+                            placeholder="Ex: Tech Solutions"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CARGO -->
+
+                    <div class="campo">
+
+                        <label for="cargo">
+                            Cargo / Vaga
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cargo"
+                            placeholder="Ex: Estagiário de Desenvolvimento"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ÁREA -->
+
+                    <div class="campo">
+
+                        <label for="area">
+                            Área
+                        </label>
+
+                        <select id="area" required>
+
+                            <option value="">
+                                Selecione uma área
+                            </option>
+
+                            <option value="Tecnologia">
+                                Tecnologia
+                            </option>
+
+                            <option value="Administração">
+                                Administração
+                            </option>
+
+                            <option value="Marketing">
+                                Marketing
+                            </option>
+
+                            <option value="Design">
+                                Design
+                            </option>
+
+                            <option value="Engenharia">
+                                Engenharia
+                            </option>
+
+                            <option value="Direito">
+                                Direito
+                            </option>
+
+                            <option value="Contabilidade">
+                                Contabilidade
+                            </option>
+
+                            <option value="Recursos Humanos">
+                                Recursos Humanos
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MODALIDADE -->
+
+                    <div class="campo">
+
+                        <label for="modalidade">
+                            Modalidade
+                        </label>
+
+                        <select id="modalidade" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Presencial">
+                                Presencial
+                            </option>
+
+                            <option value="Híbrido">
+                                Híbrido
+                            </option>
+
+                            <option value="Remoto">
+                                Remoto
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- LOCALIZAÇÃO -->
+
+                    <div class="campo">
+
+                        <label for="localizacao">
+                            Localização
+                        </label>
+
+                        <input
+                            type="text"
+                            id="localizacao"
+                            placeholder="Ex: Fortaleza - CE"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- BOLSA -->
+
+                    <div class="campo">
+
+                        <label for="bolsa">
+                            Bolsa auxílio
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bolsa"
+                            placeholder="Ex: R$ 1.200,00"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DESCRIÇÃO -->
+
+                    <div class="campo campo-completo">
+
+                        <label for="descricao">
+                            Descrição da vaga
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            rows="5"
+                            placeholder="Descreva as atividades, requisitos e benefícios..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-principal btn-cadastrar"
+                >
+                    🚀 Publicar vaga
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             VAGAS
+        ========================== -->
+
+        <section class="vagas" id="vagas">
+
+            <div class="titulo-vagas">
+
+                <div>
+
+                    <span>OPORTUNIDADES</span>
+
+                    <h2>
+                        Vagas disponíveis
+                    </h2>
+
+                </div>
+
+
+                <div class="pesquisa">
+
+                    <input
+                        type="text"
+                        id="pesquisa"
+                        placeholder="🔎 Pesquisar vaga..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- TABELA -->
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Empresa</th>
+
+                            <th>Vaga</th>
+
+                            <th>Área</th>
+
+                            <th>Modalidade</th>
+
+                            <th>Local</th>
+
+                            <th>Bolsa</th>
+
+                            <th>Ação</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="tabelaVagas">
+
+                        <!--
+                            As vagas serão adicionadas
+                            automaticamente pelo JavaScript.
+                        -->
+
+                    </tbody>
+
+                </table>
+
+
+                <div
+                    id="mensagemVazia"
+                    class="mensagem-vazia"
+                >
+
+                    <div>
+                        📭
+                    </div>
+
+                    <h3>
+                        Nenhuma vaga encontrada
+                    </h3>
+
+                    <p>
+                        Cadastre uma vaga ou altere sua pesquisa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div>
+
+                <a href="#inicio" class="logo">
+                    Estágio<span>Já</span>
+                </a>
+
+                <p>
+                    Conectando estudantes às melhores
+                    oportunidades de estágio.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#cadastrar">
+                    Cadastrar vaga
+                </a>
+
+                <a href="#vagas">
+                    Vagas
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    EstágioJá
+                </h3>
+
+                <p>
+                    Encontre oportunidades.
+                </p>
+
+                <p>
+                    Construa seu futuro.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 EstágioJá — Projeto acadêmico.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
